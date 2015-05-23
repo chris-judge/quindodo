@@ -1,0 +1,66 @@
+// -------------------------------------
+//   Display
+// -------------------------------------
+
+.db {
+  display: block;
+}
+
+.dib {
+  display: inline-block;
+}
+
+.dn {
+  display: none;
+}
+
+// -------------------------------------
+//   Margins
+// -------------------------------------
+
+// ----- Horizontal ----- //
+
+.mhc {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+// -------------------------------------
+//   Positioning
+// -------------------------------------
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.poa {
+  position: absolute;
+}
+
+.pof {
+  position: fixed;
+}
+
+.por {
+  position: relative;
+}
+
+.pos {
+  position: static;
+}
+
+
+// -------------------------------------
+//   Text
+// -------------------------------------
+
+// ----- Alignment ----- //
+
+.tac {
+  text-align: center;
+}
