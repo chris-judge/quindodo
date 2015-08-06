@@ -43,6 +43,14 @@ function quindo_login_css() {
 }
 add_action( 'login_enqueue_scripts', 'quindo_login_css', 10 );
 
+// Allow Thumbnails in Posts
+add_theme_support( 'post-thumbnails' );
 
 // Disable admin editor. Should be in config.php but let's add it here just in case
 define('DISALLOW_FILE_EDIT', TRUE);
+
+// Change Excerpt notation
+function new_excerpt_more( $more ) {
+    return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
