@@ -8,10 +8,18 @@ body
 	font-size: 2.0rem
 	background-color: white
 	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
 
 a
 	text-decoration: none
 
+body.lock, html.lock
+	overflow: hidden
+	position: relative
+
+body.unlock, html.unlock
+	overflow: visible
+	position: static
 
 section
 	display: flex
