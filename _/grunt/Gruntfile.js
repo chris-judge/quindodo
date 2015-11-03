@@ -8,7 +8,10 @@ module.exports = function(grunt) {
 			// Configuration for concatinating files goes here.
 			dist: {
 				src: [
-					'../js/src/common.js'  
+					'../js/src/variables.js',
+					'../js/src/functions.js',
+					'../js/src/ready.js',
+					'../js/src/scroll.js'
 				],
 				dest: '../js/pro/global.js',
 			},

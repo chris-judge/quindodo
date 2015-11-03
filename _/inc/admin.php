@@ -16,7 +16,7 @@ add_filter( 'login_headertitle', 'quindo_login_title' );
 
 // Remove unwanted items from admin menu
 function quindo_remove_admin_menu_items() {
-    $remove_menu_items = array(__('Posts'),__('Media'),__('Comments'),);
+    $remove_menu_items = array(__('Posts'),__('Comments'),);
     global $menu;
     end ($menu);
     while (prev($menu)){
@@ -36,12 +36,12 @@ function quindo_editor_styles() {
 add_action( 'after_setup_theme', 'quindo_editor_styles' );
 
 // Register styles for login page
-function quindo_login_css() {
-    if (WP_ENV === 'production')
-        $quindo_file_suffix = '.min';
-    wp_enqueue_style( 'logincss', get_template_directory_uri() . '/_/css/login'.$quindo_file_suffix.'.css?'.filemtime(get_template_directory()."/_/css/login" . $quindo_file_suffix . ".css"), false );
-}
-add_action( 'login_enqueue_scripts', 'quindo_login_css', 10 );
+// function quindo_login_css() {
+//     if (WP_ENV === 'production')
+//         $quindo_file_suffix = '.min';
+//     wp_enqueue_style( 'logincss', get_template_directory_uri() . '/_/css/login'.$quindo_file_suffix.'.css?'.filemtime(get_template_directory()."/_/css/login" . $quindo_file_suffix . ".css"), false );
+// }
+// add_action( 'login_enqueue_scripts', 'quindo_login_css', 10 );
 
 // Allow Thumbnails in Posts
 add_theme_support( 'post-thumbnails' );
