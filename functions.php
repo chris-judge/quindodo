@@ -27,6 +27,15 @@
     // Custom Theme Utility Functions
     include('_/inc/utilities.php');
 
+    // Featured Images and Image Sizes
+    // include('_/inc/images.php');
+
+    // Custom Post Types / Taxonomies
+    // include('_/inc/post_types.php');
+
+    // Custom Nav
+    // include('_/inc/nav.php');
+
     /* ----------------------------------------------------------------------------
      Hide Admin Menu
     -------------------------------------------------------------------------------*/
